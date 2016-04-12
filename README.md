@@ -64,18 +64,16 @@ CONSTRAINTS :<br>
 - Click "PLAY ALL TESTCASES" at the bottom right of the screen or you can run each TESTCASE individually to see it's output.
 ![Alt Text](http://s29.postimg.org/qwfdcubjr/coding_game_run_test_cases.png "Missing Image for Diagram")
 
-##2. Test Iterative and Recursive Solutions using NodeJS
+##2. Test Iterative and Recursive Solutions using Node.js
 - Install NodeJS by following the instructions at the website: https://nodejs.org/
-- Download the CodeChallenges repo from Github: https://github.com/509dave16/CodeChallenges and extract the contents of the zip
-- Or clone the repo using: git clone https://github.com/509dave16/CodeChallenges.git
-- Using the Command Prompt or Terminal, navigate to the following directory:<br>
-<strong>CodeChallenges/coding-game-challenges/shortest-propagation-time/</strong>
+- Download or Clone this repo from Github
+- Using the Command Prompt or Terminal, navigate to the cloned/downloaded repo
 - Run the following command to install all of the npm modules: <strong>npm install</strong><br>
 - Then run either of the following commands to execute the 'iterative' or 'recursive' solutions:<br>
 <strong>1) Iterative solution command: gulp </strong><br>
 <strong>2) Recursive solution command: gulp -r</strong><br>
 
-###Notes on NodeJS Output
+###Notes on Node.js Output
 - The output from running <strong>gulp</strong> or <strong>gulp -r</strong> will be the Time to Complete, Shortest Propagation Time, Num of Nodes, and Num of Nodes Computed for each input file.
 - Each input file has a corresponding output file according to the number postfix(e.g. spt-test-in.0.txt and spt-test-out.0.txt).
 - Each output file contains the validated SPT from the codinggame site merely for reference.
