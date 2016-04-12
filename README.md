@@ -1,4 +1,6 @@
 #Summary
+This repo is an extraction of the solutions from a [previous repo](https://github.com/509dave16/CodeChallenges/tree/master/coding-game-challenges/shortest-propagation-time) of mine.
+
 This repo contains 3 solutions:
 
 1. Original Solution submitted to Coding Game
