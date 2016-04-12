@@ -65,7 +65,7 @@ CONSTRAINTS :<br>
 ![Alt Text](http://s29.postimg.org/qwfdcubjr/coding_game_run_test_cases.png "Missing Image for Diagram")
 
 ##2. Test Iterative and Recursive Solutions using Node.js
-- Install NodeJS by following the instructions at the website: https://nodejs.org/
+- Install Node.js by following the instructions at the website: https://nodejs.org/
 - Download or Clone this repo from Github
 - Using the Command Prompt or Terminal, navigate to the cloned/downloaded repo
 - Run the following command to install all of the npm modules: <strong>npm install</strong><br>
