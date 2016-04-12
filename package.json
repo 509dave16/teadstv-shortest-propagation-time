@@ -1,0 +1,26 @@
+{
+  "name": "teadstv-shortest-propagation-time",
+  "version": "1.0.0",
+  "description": "Solutions to Teads.tv Graph Theory Challenge concerning Shortest Propagation Time.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "spt",
+    "shortest",
+    "propgagation",
+    "time",
+    "solutions",
+    "teads",
+    "tv",
+    "algorithm"
+  ],
+  "author": "David Fall",
+  "license": "ISC"
+}
