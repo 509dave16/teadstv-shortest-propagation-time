@@ -6,16 +6,20 @@ sptDriver(fileName, computeShortestPropagationTime);
 function computeShortestPropagationTime(nodeNeighbors) {
   let neighborNodeHasBetterSPT = true;
   let computedNodes = [];
-  const initialNode = nodeNeighbors.reduce((maxNeighborsNode, neighbors, node, nodeNeighbors ) => {
+  const initialNode = nodeNeighbors.reduce((maxNeighborsNode, neighbors, node, nodeNeighbors) => {
     return neighbors.length > nodeNeighbors[maxNeighborsNode].length ? node : maxNeighborsNode;
   }, 0);//assuming 0 index exists
 
   let neighbors = nodeNeighbors[initialNode];
-  let previousState = computePropagationTime({nodeNeighbors: nodeNeighbors, spt: 1000000, computedNodes: computedNodes }, initialNode);
+  let previousState = computePropagationTime({
+    nodeNeighbors: nodeNeighbors,
+    spt: 1000000,
+    computedNodes: computedNodes
+  }, initialNode);
 
-  while(neighborNodeHasBetterSPT) {
+  while (neighborNodeHasBetterSPT) {
     let currentState = neighbors.reduce(computePropagationTime, previousState);
-    if(currentState.node === previousState.node) {
+    if (currentState.node === previousState.node) {
       break;
     }
     neighbors = nodeNeighbors[currentState.node];
@@ -57,7 +61,7 @@ function computePropagationTime(previousState, node) {
     properties.spt = maxSpt;
     properties.node = node;
   }
-  return Object.assign({},previousState,properties);
+  return Object.assign({}, previousState, properties);
 }
 
 function propagate(state) {
@@ -70,7 +74,7 @@ function propagate(state) {
   const notVisitedNeighbors = neighbors.filter((neighbor) => {
     if (state.nodesVisited[neighbor] !== undefined) {
       const previousTimeToNeighbor = state.nodesVisited[neighbor];
-      if(timeToNeighbor < previousTimeToNeighbor) {
+      if (timeToNeighbor < previousTimeToNeighbor) {
         state.nodesVisited[neighbor] = timeToNeighbor;
         return true;
       }
@@ -81,15 +85,10 @@ function propagate(state) {
   });
 
   const neighborsStates = notVisitedNeighbors.map((neighbor) => {
-    const neighborState = Object.assign({},state,{ node: neighbor, timeToNode: timeToNeighbor});
+    const neighborState = Object.assign({}, state, {node: neighbor, timeToNode: timeToNeighbor});
     state.nodesVisited[neighbor] = timeToNeighbor;
     return neighborState;
   });
 
-  return neighborsStates.reduce( (continueComputing, neighborState) => {
-    if(continueComputing) {
-      return propagate(neighborState);
-    }
-    return false;
-  }, true);
+  return neighborsStates.every((neighborState) => propagate(neighborState));
 }
