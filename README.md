@@ -1,4 +1,4 @@
-#Summary
+# Summary
 This repo is an extraction of the solutions from a [previous repo](https://github.com/509dave16/CodeChallenges/tree/master/coding-game-challenges/shortest-propagation-time) of mine.
 
 This repo contains 3 solutions:
@@ -11,7 +11,7 @@ I originally  solved the Shortest Propagation Time challenge on Coding Game that
 - Go to the [Testing Solutions](#testing-solutions) section to find out more on how to see see my solutions in action.
 - You can see [proof](#proof) of me completing the challenge.
 
-#Challenge
+# Challenge
 Here at Teads we know that to maximize the impact of an advertisement, the message needs to spread far and quickly.
  
 You are given data to calculate viral potential, represented by a network of people ready to relay a message to more people.
@@ -55,8 +55,8 @@ CONSTRAINTS :<br>
 
 ##Challenge source: https://www.codingame.com/contests/sponsor
 
-#testing solutions
-##1. Test Original Solution using Coding Game's Challenge IDE
+# testing solutions
+## 1. Test Original Solution using Coding Game's Challenge IDE
 - Copy the text from spt-coding-game.js.
 - Go to https://www.codingame.com/contests/sponsor page
 - Click on the "Solve It" button for the Teads Sponsored Contest:
@@ -66,7 +66,7 @@ CONSTRAINTS :<br>
 - Click "PLAY ALL TESTCASES" at the bottom right of the screen or you can run each TESTCASE individually to see it's output.
 ![Alt Text](http://s29.postimg.org/qwfdcubjr/coding_game_run_test_cases.png "Missing Image for Diagram")
 
-##2. Test Iterative and Recursive Solutions using Node.js
+## 2. Test Iterative and Recursive Solutions using Node.js
 - Install Node.js by following the instructions at the website: https://nodejs.org/
 - Download or Clone this repo from Github
 - Using the Command Prompt or Terminal, navigate to the cloned/downloaded repo
@@ -75,10 +75,10 @@ CONSTRAINTS :<br>
 <strong>1) Iterative solution command: gulp </strong><br>
 <strong>2) Recursive solution command: gulp -r</strong><br>
 
-###Notes on Node.js Output
+### Notes on Node.js Output
 - The output from running <strong>gulp</strong> or <strong>gulp -r</strong> will be the Time to Complete, Shortest Propagation Time, Num of Nodes, and Num of Nodes Computed for each input file.
 - Each input file has a corresponding output file according to the number postfix(e.g. spt-test-in.0.txt and spt-test-out.0.txt).
 - Each output file contains the validated SPT from the codinggame site merely for reference.
 
-#proof
+# proof
 ![Alt Text](http://s23.postimg.org/hd4y32egr/teads_tv_challenge_proof.png "Missing Image for Diagram")
