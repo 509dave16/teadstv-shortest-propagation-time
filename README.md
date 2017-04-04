@@ -22,11 +22,11 @@ When an individual broadcasts a message, it is counted as a single step, meaning
  
 Here is an example with persons #1, #2, #3, #4, #5, #6, #7 and #8 linked like so:
  
-![Alt Text](http://code.codingame.com/fileservlet?id=438097898883 "Missing Image for Diagram")
+![Diagram](https://code.codingame.com/fileservlet?id=438097898883)
  
 Here, by choosing to start propagation of the message with person #1, 4 hours will be needed to share the message to the entire network:
 
-![Alt Text](http://code.codingame.com/fileservlet?id=438112355735 "Missing Image for Diagram")
+![Diagram](https://code.codingame.com/fileservlet?id=438112355735)
 
 1.   \#1 relays the message to #2
 2.   \#2 then relays it to #3
@@ -35,7 +35,7 @@ Here, by choosing to start propagation of the message with person #1, 4 hours wi
  
 If we decide now to start the propagation with person #3, then only 2 hours are needed:
  
-![Alt Text](http://code.codingame.com/fileservlet?id=438103072669 "Missing Image for Diagram")
+![Alt Text](http://code.codingame.com/fileservlet?id=438103072669)
  
 1.   \#3 relays the message to #2, #4 and #7
 2.   \#2 relays it to #1 ; #4 relays it to #5 and #6 ; #7 relays it to #8
@@ -53,18 +53,18 @@ CONSTRAINTS :<br>
 0 < N < 150000<br>
 0 ≤ X,Y < 200000
 
-##Challenge source: https://www.codingame.com/contests/sponsor
+## Challenge source: https://www.codingame.com/contests/sponsor
 
 # testing solutions
 ## 1. Test Original Solution using Coding Game's Challenge IDE
 - Copy the text from spt-coding-game.js.
 - Go to https://www.codingame.com/contests/sponsor page
 - Click on the "Solve It" button for the Teads Sponsored Contest:
-![Alt Text](http://s29.postimg.org/lv7zbh43b/coding_game_teadstv_contest.png "Missing Image for Diagram")
+![Choosing the a problem to solve](https://s29.postimg.org/lv7zbh43b/coding_game_teadstv_contest.png)
 -  Select "Javascript" as the language of the solution, then paste the code into the Coding Game IDE "Your Code" panel:
-![Alt Text](http://s29.postimg.org/q5mn7296f/coding_game_editor.png "Missing Image for Diagram")
+![Choosing a language for implementation](https://s29.postimg.org/q5mn7296f/coding_game_editor.png)
 - Click "PLAY ALL TESTCASES" at the bottom right of the screen or you can run each TESTCASE individually to see it's output.
-![Alt Text](http://s29.postimg.org/qwfdcubjr/coding_game_run_test_cases.png "Missing Image for Diagram")
+![Playing All Test Cases](https://s29.postimg.org/qwfdcubjr/coding_game_run_test_cases.png)
 
 ## 2. Test Iterative and Recursive Solutions using Node.js
 - Install Node.js by following the instructions at the website: https://nodejs.org/
@@ -81,4 +81,4 @@ CONSTRAINTS :<br>
 - Each output file contains the validated SPT from the codinggame site merely for reference.
 
 # proof
-![Alt Text](http://s23.postimg.org/hd4y32egr/teads_tv_challenge_proof.png "Missing Image for Diagram")
+![Proof of completion image](https://s23.postimg.org/hd4y32egr/teads_tv_challenge_proof.png)
