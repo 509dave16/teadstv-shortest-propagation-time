@@ -4,7 +4,7 @@ This repo is an extraction of the solutions from a [previous repo](https://githu
 This repo contains 3 solutions:
 
 1. Original Solution submitted to Coding Game
-2. Iterative Solution(almost the same as 1.)
+2. Iterative Solution(almost the same as 3.)
 3. Recursive Solution
 
 I originally  solved the Shortest Propagation Time challenge on Coding Game that was sponsored by Teads.TV, an online marketing company, using the Original Solution. Later I wanted to try writing a Recursive solution and compare it's performance with the Iterative solution that I had originally wrote.
